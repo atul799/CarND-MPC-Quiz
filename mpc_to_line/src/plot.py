@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Apr 23 12:56:59 2018
+This script is a workaround as matplotlibcpp doesn't work in docker
+plots cte/delta and velocity for MPC
 
 @author: atpandey
 """
@@ -12,27 +13,25 @@ import matplotlib.pyplot as plt
 #%%
 cte_file='mpc_cte.out'
 cte_list=[]
-with open(cte_file, mode='rb') as f:
-    cte_list = [line.rstrip('\n') for line in open(cte_file)]
+#with open(cte_file, mode='rb') as f:
+cte_list = [line.rstrip('\n') for line in open(cte_file)]
     #for line in f:
     #    cte_list.append(line)
     
 #%%
 delta_file='mpc_delta.out'
 delta_list=[]
-with open(delta_file, mode='rb') as f:
-    delta_list = [line.rstrip('\n') for line in open(delta_file)]
+delta_list = [line.rstrip('\n') for line in open(delta_file)]
     
 
 #%%
 velocity_file='mpc_velocity.out'
 velocity_list=[]
-with open(velocity_file, mode='rb') as f:
-    velocity_list = [line.rstrip('\n') for line in open(velocity_file)]
+velocity_list = [line.rstrip('\n') for line in open(velocity_file)]
     
 #%%
 
-fig, ax = plt.subplots(nrows=3, ncols=1)
+#fig, ax = plt.subplots(nrows=3, ncols=1)
 nx=len(cte_list)
 x=range(nx)
 #print(nx)
