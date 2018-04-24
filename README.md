@@ -17,7 +17,7 @@ To run:
 
 A solution for each quiz is presented in the solution directory.
 
-Docker environment is used which doesn't work with matplotlib, hence data from Mind The Line Quiz is written in a text file and post processed using python script [plot.py](./mpc_to_line/src/plot.py) and plot saved as [output](./mpc_to_line/build/output.png) 
+Docker environment is used which doesn't work with matplotlib, hence data from Mind The Line Quiz is written in a text file and post processed using python script [plot.py](./mpc_to_line/src/plot.py) and plot saved as ![output](./mpc_to_line/build/output.png) 
 
 
 ## Dependencies
