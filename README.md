@@ -273,4 +273,4 @@ xt+1−(xt+vt∗cos(ψt)∗dt)=0
 
 ## Result
 
-![output](./mpc_to_line/build/output.png)
+![output](./mpc_to_line/outputs/output.png)

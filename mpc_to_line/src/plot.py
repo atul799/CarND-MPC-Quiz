@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
  
 
 #%%
-cte_file='mpc_cte.out'
+cte_file='../outputs/mpc_cte.out'
 cte_list=[]
 #with open(cte_file, mode='rb') as f:
 cte_list = [line.rstrip('\n') for line in open(cte_file)]
@@ -19,13 +19,13 @@ cte_list = [line.rstrip('\n') for line in open(cte_file)]
     #    cte_list.append(line)
     
 #%%
-delta_file='mpc_delta.out'
+delta_file='../outputs/mpc_delta.out'
 delta_list=[]
 delta_list = [line.rstrip('\n') for line in open(delta_file)]
     
 
 #%%
-velocity_file='mpc_velocity.out'
+velocity_file='../outputs/mpc_velocity.out'
 velocity_list=[]
 velocity_list = [line.rstrip('\n') for line in open(velocity_file)]
     
@@ -63,6 +63,6 @@ ax2.set_title('Velocity')
 ax0.plot(x, cte_list, linewidth=3)
 ax1.plot(xd,delta_list , linewidth=3)
 ax2.plot(x,velocity_list , linewidth=3)
-plt.savefig('output.png')
+plt.savefig('../outputs/output.png')
            
 

@@ -374,7 +374,7 @@ int main() {
   // Plot values
   // NOTE: feel free to play around with this.
   // It's useful for debugging!
-  cout <<"Plotting CTE"<<endl;
+  //cout <<"Plotting CTE"<<endl;
   //plt::subplot(3, 1, 1);
   //plt::title("CTE");
   //plt::plot(cte_vals);
@@ -417,9 +417,9 @@ int main() {
     //plt::save(filename);
   //////////////////////////////////
   // open a file handle to write results for visualization
-  string cte_file_name="mpc_cte.out";
-  string delta_file_name="mpc_delta.out";
-  string velocity_file_name="mpc_velocity.out";
+  string cte_file_name="../outputs/mpc_cte.out";
+  string delta_file_name="../outputs/mpc_delta.out";
+  string velocity_file_name="../outputs/mpc_velocity.out";
   ofstream cte_out_file (cte_file_name, ofstream::out);
   if (!cte_out_file.is_open())  {
 	  cerr << "Cannot open output file: " << cte_file_name << endl;
