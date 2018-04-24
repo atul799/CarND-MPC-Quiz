@@ -60,7 +60,7 @@ class FG_eval {
     fg[0] = 0;
 
     // Reference State Cost
-    // TODO: Define the cost related the reference state and
+    // : Define the cost related the reference state and
     // any anything you think may be beneficial.
 
     // The part of the cost based on the reference state.
